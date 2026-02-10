@@ -5,21 +5,21 @@
 class Nuther < Formula
   desc "S.M.A.R.T. disk health monitoring TUI"
   homepage "https://github.com/lugnicca/nuther"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lugnicca/nuther/releases/download/v0.1.1/nuther_0.1.1_darwin_amd64.tar.gz"
-      sha256 "48cd9ca3c9d95c39aa47dca97c456f479165eb07cfb0b40f3662a50e29a07c29"
+      url "https://github.com/lugnicca/nuther/releases/download/v0.1.2/nuther_0.1.2_darwin_amd64.tar.gz"
+      sha256 "a9344a55ed288273a8bbf4e6c6cac72268500dc1183a8d26ffd7ce7697152c23"
 
       def install
         bin.install "nuther"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lugnicca/nuther/releases/download/v0.1.1/nuther_0.1.1_darwin_arm64.tar.gz"
-      sha256 "0168860c1e1dd60739d53f3bb9a54c20e9da6973ba47dcd0dbd498d56c597d0a"
+      url "https://github.com/lugnicca/nuther/releases/download/v0.1.2/nuther_0.1.2_darwin_arm64.tar.gz"
+      sha256 "d32bf2b972707c873226bd4e6322ab969fd04688482cb85116f555335ff50eb5"
 
       def install
         bin.install "nuther"
@@ -29,15 +29,15 @@ class Nuther < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lugnicca/nuther/releases/download/v0.1.1/nuther_0.1.1_linux_amd64.tar.gz"
-      sha256 "d09c0ccb09bd6011ed37314d174ca8b827d6172208143928f6b9d76fb6dc09a9"
+      url "https://github.com/lugnicca/nuther/releases/download/v0.1.2/nuther_0.1.2_linux_amd64.tar.gz"
+      sha256 "2d9741eeaaa07bbb138d83d14edd543b97bc4e6f2ebc66fdeb7fff25a47bdf1f"
       def install
         bin.install "nuther"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lugnicca/nuther/releases/download/v0.1.1/nuther_0.1.1_linux_arm64.tar.gz"
-      sha256 "af3c4a54891eb7a08f10bb0c806039ae98848490f032b741b6347e5a9ee66478"
+      url "https://github.com/lugnicca/nuther/releases/download/v0.1.2/nuther_0.1.2_linux_arm64.tar.gz"
+      sha256 "27c14a1559046088169f9529875a9a8f8f528a93e7f2f686cf739998421e22e7"
       def install
         bin.install "nuther"
       end
