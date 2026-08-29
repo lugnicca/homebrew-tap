@@ -5,21 +5,21 @@
 class Nuther < Formula
   desc "S.M.A.R.T. disk health monitoring TUI"
   homepage "https://github.com/lugnicca/nuther"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lugnicca/nuther/releases/download/v0.3.1/nuther_0.3.1_darwin_amd64.tar.gz"
-      sha256 "3e3c9b0d26d3d27d11834fa48fc81533856d22df3cd15aa7cab4507fb2314344"
+      url "https://github.com/lugnicca/nuther/releases/download/v0.4.0/nuther_0.4.0_darwin_amd64.tar.gz"
+      sha256 "08923a6aaca7de026be1dc491a41dceb55739ed2c84cf8ef0efdd6ddd82d1f00"
 
       define_method(:install) do
         bin.install "nuther"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lugnicca/nuther/releases/download/v0.3.1/nuther_0.3.1_darwin_arm64.tar.gz"
-      sha256 "9e9879d362fa3979563e2abe6e3dad9faf61d831aaac3b6821423b492f84a295"
+      url "https://github.com/lugnicca/nuther/releases/download/v0.4.0/nuther_0.4.0_darwin_arm64.tar.gz"
+      sha256 "282c0b823e5e88c988dd13a911cc212d5655526a7813563f3ef05bec4d2ea11e"
 
       define_method(:install) do
         bin.install "nuther"
@@ -29,15 +29,15 @@ class Nuther < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lugnicca/nuther/releases/download/v0.3.1/nuther_0.3.1_linux_amd64.tar.gz"
-      sha256 "d2a2034d84248fd3de83b7afae027a7bd2cad05b3e98bda249d099fd02684bd6"
+      url "https://github.com/lugnicca/nuther/releases/download/v0.4.0/nuther_0.4.0_linux_amd64.tar.gz"
+      sha256 "64d7f6793f544abaecdf8aa72211654eb4071a27661a783d9536253474880664"
       define_method(:install) do
         bin.install "nuther"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lugnicca/nuther/releases/download/v0.3.1/nuther_0.3.1_linux_arm64.tar.gz"
-      sha256 "1b20d2a66142726dfe6a9440bf071258d0ee2a7e01fd5872a6c010a52266dd30"
+      url "https://github.com/lugnicca/nuther/releases/download/v0.4.0/nuther_0.4.0_linux_arm64.tar.gz"
+      sha256 "fe0a520b5a2858e952ea5c18fb2f01c20ec6f2660af138ae733e9e6ab1f2c83c"
       define_method(:install) do
         bin.install "nuther"
       end
